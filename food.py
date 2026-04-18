@@ -459,9 +459,9 @@ if predict_btn:
         ax.set_ylim(0, max(values) * 1.20)
         ax.tick_params(colors='#aaaacc', labelsize=9)
         ax.spines[['top', 'right', 'left']].set_visible(False)
-        ax.spines['bottom'].set_color('rgba(255,255,255,0.1)')
+        ax.spines['bottom'].set_color((1, 1, 1, 0.1))
         ax.yaxis.set_visible(False)
-        ax.grid(axis='y', color='rgba(255,255,255,0.07)', linewidth=0.8, zorder=0)
+        ax.grid(axis='y', color=(1, 1, 1, 0.07), linewidth=0.8, zorder=0)
         for label in ax.get_xticklabels():
             label.set_color('#aaaacc')
         fig.tight_layout(pad=0.5)
